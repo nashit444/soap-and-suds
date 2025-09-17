@@ -83,6 +83,24 @@
   <<!-- Full-width banner photo -->
 <div style="margin-top:1rem; width:100%; max-height:400px; overflow:hidden;">
   <img src="laundromat.jpeg" 
+  /* full-bleed section that ignores the 960px container */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.banner {
+  max-height: 400px;         /* adjust height if you want */
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* crops nicely to fill */
+  display: block;
+}
+
        alt="Soap and Suds Laundry in Winchendon" 
        style="width:100%; height:auto; object-fit:cover; display:block;">
 </div>
