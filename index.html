@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Soap and Suds Laundry – Wash & Fold</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Soap and Suds Laundry: self-serve, Open daily 6 AM – 9 PM." />
+  <!-- Tailwind (no build needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Soap and Suds Laundry" />
+  <meta property="og:description" content="Self-serve, Open daily 6 AM – 9 PM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="REPLACE_ME_SITE_URL" />
+  <meta property="og:image" content="REPLACE_ME_OG_IMAGE_URL" />
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="REPLACE_ME_FAVICON_URL" />
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Laundromat",
+    "name":"Soap and Suds Laundry",
+    "url":"REPLACE_ME_SITE_URL",
+    "telephone":"REPLACE_ME_PHONE",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"REPLACE_ME_STREET",
+      "addressLocality":"REPLACE_ME_CITY",
+      "addressRegion":"REPLACE_ME_STATE",
+      "postalCode":"REPLACE_ME_ZIP",
+      "addressCountry":"US"
+    },
+    "openingHoursSpecification":[
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"06:00","closes":"21:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"06:00","closes":"21:00"}
+    ],
+    "servesCuisine":"Laundry Services",
+    "image":"REPLACE_ME_OG_IMAGE_URL",
+    "sameAs":["REPLACE_ME_FACEBOOK","REPLACE_ME_INSTAGRAM"]
+  }
+  </script>
+  <style>
+    :root { 
+  --bg:#f0f6ff;        /* light blue background */
+  --ink:#0a0a0a;       /* near black text */
+  --brand:#0d47a1;     /* deep blue for headers/buttons */
+  --brand2:#002171;    /* darker navy for nav bar */
+}
+
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-2xl bg-slate-900 text-white grid place-items-center" aria-hidden="true">SS</div>
+        <div class="font-semibold" aria-label="Business name">Soap and Suds Laundry</div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm" aria-label="Primary">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#pricing" class="hover:underline">Pricing</a>
+        <a href="#hours" class="hover:underline">Hours</a>
+        <a href="#location" class="hover:underline">Location</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="#pickup" class="px-4 py-2 rounded-2xl bg-slate-900 text-white text-sm">Book Pickup</a>
+        <a href="tel:REPLACE_ME_PHONE" class="px-4 py-2 rounded-2xl border text-sm">Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Fast • Fresh • Flawless Laundry</h1>
+        <p class="mt-4 text-slate-600">
+          Self-serve machines, speedy Wash & Fold, and doorstep delivery—done right.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#pickup" class="px-5 py-3 rounded-2xl bg-slate-900 text-white">Book Pickup & Delivery</a>
+          <a href="#pricing" class="px-5 py-3 rounded-2xl border">See Pricing</a>
+        </div>
+        <div class="mt-6 flex flex-col sm:flex-row gap-4 text-sm text-slate-700">
+          <div>Open today: <strong>6:00 AM – 9:00 PM</strong></div>
+          <div>Address: <strong>REPLACE_ME_ADDRESS_LINE</strong></div>
+        </div>
+      </div>
+      <div class="rounded-2xl shadow-lg p-6 border">
+        <div class="aspect-video w-full rounded-xl overflow-hidden bg-slate-100 grid place-items-center">
+          <span class="text-slate-400">Add a store photo (replace OG image too)</span>
+        </div>
+        <ul class="mt-6 grid grid-cols-2 gap-4 text-sm">
+          <li><strong>Spotless Space</strong><br><span class="text-slate-600">Clean, bright, family-friendly.</span></li>
+          <li><strong>Pickup & Delivery</strong><br><span class="text-slate-600">We come to you—book fast.</span></li>
+          <li><strong>HE Machines</strong><br><span class="text-slate-600">Large-capacity, time-saving.</span></li>
+          <li><strong>Cashless Pay</strong><br><span class="text-slate-600">Safe and secure options.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">Services</h2>
+      <p class="mt-2 text-slate-600">From quick self-serve to full-service care.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border p-6"><div class="font-semibold">Self-Serve</div><div class="text-slate-600 text-sm mt-1">20–60 lb HE washers, fast dryers.</div></div>
+        <div class="rounded-2xl border p-6"><div class="font-semibold">Wash & Fold</div><div class="text-slate-600 text-sm mt-1">We wash, dry, and fold—ready next day.</div></div>
+        <div class="rounded-2xl border p-6"><div class="font-semibold">Pickup & Delivery</div><div class="text-slate-600 text-sm mt-1">Home or office—on your schedule.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+<section id="pricing" class="py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold">Pricing</h2>
+    <p class="mt-2 text-slate-600">Clear, simple, no surprises.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <!-- Self-Serve Small Washer -->
+      <div class="rounded-2xl border p-6">
+        <div class="font-semibold">Small Self-Serve Washer</div>
+        <div class="text-sm text-slate-600">Perfect for light loads</div>
+        <div class="mt-3 text-lg">$3.00 per load</div>
+      </div>
+      <!-- Self-Serve Large Washer -->
+      <div class="rounded-2xl border p-6">
+        <div class="font-semibold">Large Self-Serve Washer</div>
+        <div class="text-sm text-slate-600">Great for family-size loads</div>
+        <div class="mt-3 text-lg">$6.00 per load</div>
+      </div>
+      <!-- Dryer -->
+      <div class="rounded-2xl border p-6">
+        <div class="font-semibold">Dryer</div>
+        <div class="text-sm text-slate-600">High-efficiency dryers</div>
+        <div class="mt-3 text-lg">$0.25 for 6 minutes</div>
+      </div>
+    </div>
+    <div class="mt-6 text-sm text-slate-600">
+      Wash & Fold and Pickup & Delivery services coming soon.
+    </div>
+  </div>
+</section>
+
+
+<!-- Hours & Location -->
+<section id="hours" class="py-16 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+    <div class="rounded-2xl border p-6">
+      <h3 class="text-xl font-semibold">Hours</h3>
+      <ul class="mt-4 space-y-2 text-slate-700" aria-label="Business hours">
+        <li class="flex justify-between"><span>Mon–Sat</span><span>6:00 AM – 9:00 PM</span></li>
+        <li class="flex justify-between"><span>Sun</span><span>6:00 AM – 9:00 PM</span></li>
+      </ul>
+    </div>
+    <div id="location" class="rounded-2xl border p-6">
+      <h3 class="text-xl font-semibold">Location</h3>
+      <p class="mt-2 text-slate-700">📍 16 Main St, Winchendon, MA 01475</p>
+      <div class="mt-4 rounded-xl overflow-hidden h-64 bg-slate-200">
+        <!-- Google Maps Embed -->
+        <iframe
+          title="map"
+          width="100%"
+          height="100%"
+          style="border:0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=16+Main+St,+Winchendon,+MA+01475&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Testimonials -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold">What Customers Say</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border p-6"><p class="text-slate-700">“Super clean and fast!”</p><div class="mt-4 text-sm text-slate-500">— Happy Customer</div></div>
+        <div class="rounded-2xl border p-6"><p class="text-slate-700">“Pickup service is a lifesaver.”</p><div class="mt-4 text-sm text-slate-500">— Busy Parent</div></div>
+        <div class="rounded-2xl border p-6"><p class="text-slate-700">“Best fold I’ve ever had.”</p><div class="mt-4 text-sm text-slate-500">— Local Pro</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-bold">Get in Touch</h2>
+        <p class="mt-2 text-slate-600">Questions about service, pricing, or delivery? We’re here to help.</p>
+        <div class="mt-6 space-y-3 text-slate-700 text-sm">
+          <div>Phone: <a class="hover:underline" href="tel:REPLACE_ME_PHONE">REPLACE_ME_PHONE</a></div>
+          <div>Email: <a class="hover:underline" href="mailto:REPLACE_ME_EMAIL">REPLACE_ME_EMAIL</a></div>
+          <div>Facebook: <a class="hover:underline" href="REPLACE_ME_FACEBOOK" target="_blank">facebook.com/yourpage</a></div>
+          <div>Instagram: <a class="hover:underline" href="REPLACE_ME_INSTAGRAM" target="_blank">@yourpage</a></div>
+        </div>
+      </div>
+      <div class="rounded-2xl border p-6">
+        <!-- Formspree: create a form and replace the action URL -->
+        <form action="REPLACE_ME_FORMSPREE_ACTION" method="POST" class="space-y-4" onsubmit="if(this.action.includes('REPLACE_ME')){event.preventDefault(); alert('Set your Formspree action URL to enable sending.');}">
+          <div class="grid md:grid-cols-2 gap-4">
+            <input class="border rounded-lg px-3 py-2" name="name" placeholder="Full name" required aria-label="Full name" />
+            <input class="border rounded-lg px-3 py-2" type="email" name="_replyto" placeholder="Email" required aria-label="Email" />
+          </div>
+          <input class="border rounded-lg px-3 py-2" name="phone" placeholder="Phone (optional)" aria-label="Phone" />
+          <textarea class="border rounded-lg px-3 py-2 w-full" rows="5" name="message" placeholder="How can we help?" required aria-label="Message"></textarea>
+          <button type="submit" class="px-5 py-3 rounded-2xl bg-slate-900 text-white">Send Message</button>
+        </form>
+        <p class="text-xs text-slate-500 mt-2">Tip: Create a free form at formspree.io and paste its action URL above.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-600 grid md:grid-cols-3 gap-4">
+      <div>&copy; <span id="y"></span> Soap and Suds Laundry. All rights reserved.</div>
+      <div class="flex items-center gap-3">📍 REPLACE_ME_ADDRESS_LINE</div>
+      <div class="flex items-center gap-3 justify-start md:justify-end">⏰ Open daily — see hours</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <!-- Optional: Google Analytics (paste your GA4 tag here) -->
+</body>
+</html>
